@@ -1,0 +1,23 @@
+{
+  "name": "echovault",
+  "version": "1.0.0",
+  "description": "EchoVault — The Memories That Refuse to Disappear. Local-first digital memory archive.",
+  "scripts": {
+    "start": "./start.sh",
+    "dev": "./start.sh",
+    "test": "cd backend && PYTHONPATH=. ./venv/bin/pytest tests/",
+    "build": "npm --prefix frontend run build"
+  },
+  "keywords": [
+    "hacktoberfest",
+    "local-ai",
+    "rag",
+    "ollama",
+    "whisper",
+    "privacy-first",
+    "nextjs",
+    "fastapi"
+  ],
+  "author": "EchoVault Team",
+  "license": "MIT"
+}

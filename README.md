@@ -136,12 +136,23 @@ The signature Halloween experience for **Ghost in the Machine**:
 
 ## 5. Getting Started
 
-### Prerequisites
-- Python 3.10+ (Tested through Python 3.14)
-- Node.js 18+ & npm
-- Ollama installed (`curl -fsSL https://ollama.com/install.sh | sh`)
+### Single-Command Launch (Recommended)
+You can launch the entire stack (Ollama check, FastAPI backend, and Next.js frontend) with a single command from the project root:
 
-### Step 1: Pull Local AI Models
+```bash
+./start.sh
+```
+*(Alternatively, `npm start`, `./run.sh`, or `make run` all execute this unified launcher).*
+
+The script will:
+1. Verify or start the Ollama local AI server.
+2. Initialize and start the FastAPI Python backend on `http://localhost:8000`.
+3. Check and launch the Next.js production web UI on `http://localhost:3000`.
+4. Provide a clean graceful shutdown for all services when you press `Ctrl+C`.
+
+---
+
+### Manual Setup (Step-by-Step)
 ```bash
 # Start Ollama
 ollama serve &
