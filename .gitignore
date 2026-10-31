@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/venv/
+backend/.pytest_cache/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Next.js / Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+.next/
+node_modules/
+
+# Storage files & logs
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+backend/storage/audio/*
+!backend/storage/audio/.gitkeep
+backend/storage/processed/*
+!backend/storage/processed/.gitkeep
+backend/storage/exports/*
+!backend/storage/exports/.gitkeep
+*.log
+.env
+.env.local
